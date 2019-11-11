@@ -33,14 +33,19 @@ public class MyServlet extends HttpServlet {
                 throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         String path = request.getServletPath();
-            if("/page1".equals(path)){
-            request.getRequestDispatcher("/WEB-INF/page1.html").forward(request, response);
-        } else if("/page2".equals(path)){
-            request.getRequestDispatcher("/WEB-INF/page2.html").forward(request, response);
-        } else if("/page3".equals(path)){
-            request.getRequestDispatcher("/WEB-INF/page3.jsp").forward(request, response);
-        } else if("/page4".equals(path)){
-            request.getRequestDispatcher("/page4.jsp").forward(request, response);
+           switch (path) {
+            case "/page1":
+                request.getRequestDispatcher("/WEB-INF/page1.html").forward(request, response);
+                break;
+            case "/page2":
+                request.getRequestDispatcher("/WEB-INF/page2.html").forward(request, response);
+                break;
+            case "/page3":
+                request.getRequestDispatcher("/WEB-INF/page3.jsp").forward(request, response);
+                break;
+            case "/page4":
+                request.getRequestDispatcher("/page4.jsp").forward(request, response);
+                break;
         }
     }
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
