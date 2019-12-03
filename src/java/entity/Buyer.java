@@ -37,6 +37,10 @@ public class Buyer implements Serializable{
         this.money = money;
     }
 
+    public Buyer(String name, String lastname, String email) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public String getName() {
         return name;
     }

@@ -42,6 +42,10 @@ public class Car implements Serializable{
         this.count = quantity;
     }
 
+    public Car(String marka, String model, int parseInt, int parseInt0) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public String getMarka() {
         return marka;
     }
