@@ -35,9 +35,7 @@ import sessoin.HistoryFacade;
     "/addBuyer",
     "/listBuyers",
     "/showTakeOnCar",
-    "/takeOnCar",
-    "/showReturnCar",
-    "/returnOnCar"
+    "/takeOnCar"
     
 })
 public class MyServlet extends HttpServlet {
